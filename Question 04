@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h> // For VLAs, though often built-in
+
+void merge(int arr[], int left, int mid, int right) {
+    int i, j, k;
+    
+    // Calculate sizes of the two temporary sub-arrays
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    // --- Create temporary arrays ---
+    // Using Variable Length Arrays (VLAs)
+    int L[n1], R[n2];
+#include <stdio.h>
+#include <stdlib.h> // For VLAs, though often built-in
+
+void merge(int arr[], int left, int mid, int right) {
+    int i, j, k;
+    
+    // Calculate sizes of the two temporary sub-arrays
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+
+    // --- Create temporary arrays ---
+    // Using Variable Length Arrays (VLAs)
+    int L[n1], R[n2];
